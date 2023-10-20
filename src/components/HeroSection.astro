@@ -1,0 +1,137 @@
+---
+
+---
+
+<section
+  class="w-screen h-screen px-20 bg-[#CDC6BB] flex flex-col items-center"
+>
+  <div
+    class="imageMe w-full h-[43rem] md:w-[39rem] max-h-screen md:h-[50rem] absolute z-10 bottom-0 md:flex justify-self-start puff-in-center"
+  >
+  </div>
+  <div class="flex flex-col items-center justify-center pt-32 md:pt-44">
+    <div class="flex w-full md:w-[75rem] justify-between">
+      <h1 class="text-[var(--color1)] text-[1rem]">Full stack developer</h1>
+      <h1 class="text-[var(--color1)] text-[1rem]">Designer</h1>
+    </div>
+    <div class="flex w-full gap-6 md:w-[75rem] justify-between">
+      <h2
+        class="text-[4rem] md:text-[14.5rem] font-normal tracking-[0.06rem] text-[#1C1C37] slide-in-left"
+      >
+        Juan
+      </h2>
+      <h2
+        class="text-[4rem] md:text-[14.5rem] font-normal tracking-[0.06rem] text-[#1C1C37] slide-in-right"
+      >
+        Lopez
+      </h2>
+    </div>
+  </div>
+</section>
+<style>
+  .imageMe {
+    background-image: url("../src/lib/Imageme.png");
+    background-position: 70% -15%;
+    background-repeat: no-repeat;
+  }
+  @media (min-width: 768px) {
+    .imageMe {
+      background-position: 70% bottom;
+    }
+  }
+  .slide-in-left {
+    -webkit-animation: slide-in-left 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94)
+      both;
+    animation: slide-in-left 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  }
+  @-webkit-keyframes slide-in-left {
+    0% {
+      -webkit-transform: translateX(-500px);
+      transform: translateX(-500px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateX(0);
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  @keyframes slide-in-left {
+    0% {
+      -webkit-transform: translateX(-500px);
+      transform: translateX(-500px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateX(0);
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  .slide-in-right {
+    -webkit-animation: slide-in-right 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94)
+      both;
+    animation: slide-in-right 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  }
+  @-webkit-keyframes slide-in-right {
+    0% {
+      -webkit-transform: translateX(500px);
+      transform: translateX(500px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateX(0);
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  @keyframes slide-in-right {
+    0% {
+      -webkit-transform: translateX(500px);
+      transform: translateX(500px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateX(0);
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  .puff-in-center {
+    -webkit-animation: puff-in-center 0.7s cubic-bezier(0.47, 0, 0.745, 0.715)
+      both;
+    animation: puff-in-center 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) both;
+  }
+  @-webkit-keyframes puff-in-center {
+    0% {
+      -webkit-transform: scale(1.5);
+      transform: scale(1.5);
+      -webkit-filter: blur(4px);
+      filter: blur(4px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: scale(1);
+      transform: scale(1);
+      -webkit-filter: blur(0px);
+      filter: blur(0px);
+      opacity: 1;
+    }
+  }
+  @keyframes puff-in-center {
+    0% {
+      -webkit-transform: scale(2);
+      transform: scale(2);
+      -webkit-filter: blur(4px);
+      filter: blur(4px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: scale(1);
+      transform: scale(1);
+      -webkit-filter: blur(0px);
+      filter: blur(0px);
+      opacity: 1;
+    }
+  }
+</style>

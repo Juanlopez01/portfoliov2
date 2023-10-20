@@ -1,0 +1,83 @@
+---
+import ContactForm from "./ContactForm";
+---
+
+<section
+  class="flex flex-col md:flex-row items-center justify-center px-6 gap-4 md:px-24 md:gap-28"
+>
+  <div class="flex flex-col justify-between items-start h-fit w-fit">
+    <h2 class="text-[6rem] md:text-[11rem]">/CONTACT</h2>
+    <div class="flex flex-col justify-center gap-1 md:gap-2">
+      <div class="flex items-center gap-2">
+        <svg
+          width="32"
+          height="32"
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            fill="#f1eeeb"
+            d="M20 18h-2V9.25L12 13L6 9.25V18H4V6h1.2l6.8 4.25L18.8 6H20m0-2H4c-1.11 0-2 .89-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2Z"
+          ></path>
+        </svg>
+        <p>juanpablolopez43@gmail.com</p>
+      </div>
+      <div class="flex items-center gap-2">
+        <svg
+          width="32"
+          height="32"
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            fill="#f1eeeb"
+            d="M19.05 4.91A9.816 9.816 0 0 0 12.04 2c-5.46 0-9.91 4.45-9.91 9.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21c5.46 0 9.91-4.45 9.91-9.91c0-2.65-1.03-5.14-2.9-7.01zm-7.01 15.24c-1.48 0-2.93-.4-4.2-1.15l-.3-.18l-3.12.82l.83-3.04l-.2-.31a8.264 8.264 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.24-8.24c2.2 0 4.27.86 5.82 2.42a8.183 8.183 0 0 1 2.41 5.83c.02 4.54-3.68 8.23-8.22 8.23zm4.52-6.16c-.25-.12-1.47-.72-1.69-.81c-.23-.08-.39-.12-.56.12c-.17.25-.64.81-.78.97c-.14.17-.29.19-.54.06c-.25-.12-1.05-.39-1.99-1.23c-.74-.66-1.23-1.47-1.38-1.72c-.14-.25-.02-.38.11-.51c.11-.11.25-.29.37-.43s.17-.25.25-.41c.08-.17.04-.31-.02-.43s-.56-1.34-.76-1.84c-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.43.06-.66.31c-.22.25-.86.85-.86 2.07c0 1.22.89 2.4 1.01 2.56c.12.17 1.75 2.67 4.23 3.74c.59.26 1.05.41 1.41.52c.59.19 1.13.16 1.56.1c.48-.07 1.47-.6 1.67-1.18c.21-.58.21-1.07.14-1.18s-.22-.16-.47-.28z"
+          ></path>
+        </svg>
+        <a href="https://api.whatsapp.com/send?phone=543624804761"
+          >+54 3624804761</a
+        >
+      </div>
+      <div class="flex items-center gap-2">
+        <svg
+          width="32"
+          height="32"
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            fill="#f1eeeb"
+            d="M20.47 2H3.53a1.45 1.45 0 0 0-1.47 1.43v17.14A1.45 1.45 0 0 0 3.53 22h16.94a1.45 1.45 0 0 0 1.47-1.43V3.43A1.45 1.45 0 0 0 20.47 2ZM8.09 18.74h-3v-9h3ZM6.59 8.48a1.56 1.56 0 1 1 0-3.12a1.57 1.57 0 1 1 0 3.12Zm12.32 10.26h-3v-4.83c0-1.21-.43-2-1.52-2A1.65 1.65 0 0 0 12.85 13a2 2 0 0 0-.1.73v5h-3v-9h3V11a3 3 0 0 1 2.71-1.5c2 0 3.45 1.29 3.45 4.06Z"
+          ></path>
+        </svg>
+        <a href="https://www.linkedin.com/in/juanlopez01/">/juanlopez01</a>
+      </div>
+    </div>
+  </div>
+  <div class="w-full flex mt-4 contactText">
+    <ContactForm client:only="react" />
+  </div>
+</section>
+
+<style>
+  section {
+    background-color: #1c1c37;
+    height: 100vh;
+    color: #f1eeeb;
+  }
+  p {
+    font-family: "DM Sans", sans-serif;
+    font-size: 0.9rem;
+    text-align: center;
+  }
+
+  a {
+    font-family: "DM Sans", sans-serif;
+    font-size: 0.9rem;
+    text-align: center;
+  }
+
+  .contactText {
+    font-family: "DM Sans", sans-serif;
+  }
+</style>

@@ -1,0 +1,29 @@
+---
+import { NavLinks } from "../utils/NavLinks";
+import CTAButton from "../components/CTAButton.astro";
+---
+
+<div
+  class="bg-[#F1EEEB] flex w-[95%] md:w-[75rem] py-2 px-8 justify-between items-center rounded-md"
+>
+  <p class="text-[#1E1E1E] text-center text-[1.5rem] font-normal">JL</p>
+
+  <ul class="hidden md:flex gap-3">
+    {
+      NavLinks.map((link) => (
+        <li>
+          <a href={link.link}>{link.name}</a>
+        </li>
+      ))
+    }
+  </ul>
+
+  <CTAButton>Hire me</CTAButton>
+</div>
+
+<style>
+  ul {
+    font-family: "DM Sans", sans-serif;
+    font-weight: 400;
+  }
+</style>
