@@ -1,5 +1,6 @@
 import emailjs from '@emailjs/browser'
 import type  {EmailJSResponseStatus}  from '@emailjs/browser'
+import Swal from 'sweetalert2'
 import React from 'react'
 const initialForm = {
     user_name: '',
@@ -26,8 +27,11 @@ export default function ContactForm  ()  {
         if(emailValue && messageValue){
             console.log('entre')
             const response = await emailjs.send('service_wj99zi2', 'template_4rqkjcc', form,'rK8bCv7Jvp33cx9sG' )
-
-            console.log(response)
+            if(response.status === 200) {
+                Swal.fire('Thanks for contacting', undefined, 'success')
+            } else {
+                Swal.fire('An error occurred', undefined, 'error')
+            }
         }
 
     }
